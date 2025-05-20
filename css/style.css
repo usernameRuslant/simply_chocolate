@@ -5,6 +5,7 @@
   --main-color: #111111;
   --white: #fff;
   --orange: #fd9222;
+  --violet: #1e1823;
 }
 
 /* reset */
@@ -39,6 +40,7 @@ body {
   font-family: var(--main-font);
   font-size: var(--main-size);
   color: var(--main-color);
+  background: var(--white);
 }
 /* header style */
 .page-header {
@@ -109,4 +111,43 @@ body {
 }
 .hero-link-scroll {
   color: var(--white);
+}
+/* benefits */
+.benefits {
+  padding: 50px 0px;
+
+  height: 266px;
+  background: var(--violet);
+}
+
+.benefits-list {
+}
+.benefits-item {
+}
+.benefits-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22222;
+  color: var(--white);
+}
+.benefits-text {
+  font-weight: 400;
+  font-size: 14px;
+
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
