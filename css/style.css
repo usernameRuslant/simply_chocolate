@@ -114,10 +114,18 @@ body {
 
   width: 1136px;
   padding-bottom: 40px;
-  padding: 0 40px 40px 40px;
+  padding: 0 32px 40px 32px;
   margin-bottom: 120px;
 }
 
+.hero .content-wrapper {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 14px;
+  height: 600px;
+}
 .hero-title {
   font-weight: 500;
   font-size: 28px;
@@ -167,16 +175,24 @@ body {
   height: 266px;
   background: var(--violet);
 }
-
+.benefits .container {
+  width: 1164px;
+}
 .benefits-list {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 88px;
 }
 .benefits-item {
+  /* width: 308px; */
+  flex-basis: calc((100% - 176px) / 3);
 }
 .benefits-title {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.22222;
   color: var(--white);
+  margin-bottom: 18px;
 }
 .benefits-text {
   font-weight: 400;
