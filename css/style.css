@@ -6,6 +6,7 @@
   --white: #fff;
   --orange: #fd9222;
   --violet: #1e1823;
+  --black: #111;
 }
 
 /* reset */
@@ -23,7 +24,8 @@ p {
   margin: 0;
 }
 
-.list {
+.list,
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -150,4 +152,75 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+/* ingridients */
+.ingridients {
+}
+
+.ingredients-title {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 24px;
+
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--black);
+}
+.ingredients-title-elem {
+  color: var(--orange);
+}
+.ingredients-list {
+}
+.ingredients-item {
+  border-radius: 15px;
+}
+.bg-orange {
+  background: var(--orange);
+  color: var(--white);
+}
+.bg-black {
+  background: var(--violet);
+  color: var(--white);
+}
+.bg-white {
+  background: var(--white);
+  border: 1px solid var(--orange);
+}
+.ingredients-item-img {
+}
+.ingredients-item-title {
+}
+/* <!-- how it's made  --> */
+.how-made {
+}
+
+.how-made-title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+
+  line-height: 1.3;
+  color: var(--black);
+  text-align: center;
+}
+.how-made-img {
+  border-radius: 15px;
+}
+.how-made-block {
+}
+.how-made-block-title {
+}
+.how-made-block-list {
+  list-style: disc;
+}
+.how-made-block-item {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: var(--black);
 }
