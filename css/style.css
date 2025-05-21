@@ -108,10 +108,14 @@ body {
 .social-link {
 }
 /* hero */
-.hero {
+.hero .container {
   background: rgba(17, 17, 17, 0.7);
   border-radius: 30px;
-  min-height: 600px;
+
+  width: 1136px;
+  padding-bottom: 40px;
+  padding: 0 40px 40px 40px;
+  margin-bottom: 120px;
 }
 
 .hero-title {
@@ -122,6 +126,9 @@ body {
   letter-spacing: -0.03em;
   color: var(--white);
   font-family: var(--font-family);
+  padding-top: 381px;
+  margin-bottom: 32px;
+  max-width: 484px;
 }
 .hero-btn {
   background: var(--orange);
@@ -131,6 +138,15 @@ body {
   height: 45px;
   border: none;
   color: var(--white);
+}
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper-leftside {
+  display: flex;
+  gap: 14px;
 }
 .hero-link {
   border: 1px solid var(--white);
