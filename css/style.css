@@ -217,6 +217,8 @@ body {
 }
 /* ingridients */
 .ingridients {
+  padding-top: 120px;
+  padding-bottom: 60px;
 }
 
 .ingredients-title {
@@ -229,31 +231,44 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: var(--black);
+
+  margin: 0 auto;
+  max-width: 412px;
+  margin-bottom: 50px;
 }
 .ingredients-title-elem {
   color: var(--orange);
 }
 .ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 .ingredients-item {
+  flex-basis: calc((100% - 96px) / 4);
   border-radius: 15px;
+  padding: 28px 21px 28px 21px;
+  border: 1px solid var(--orange);
 }
-.bg-orange {
+
+.ingredients-item-img {
+  margin-bottom: 32px;
+}
+.ingredients-item-title {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.ingredients-item:nth-child(4n + 1) {
   background: var(--orange);
   color: var(--white);
 }
-.bg-black {
-  background: var(--violet);
+.ingredients-item:nth-child(4n + 3) {
+  background: var(--black);
+  border: 1px solid none;
   color: var(--white);
 }
-.bg-white {
-  background: var(--white);
-  border: 1px solid var(--orange);
-}
-.ingredients-item-img {
-}
-.ingredients-item-title {
-}
+
 /* <!-- how it's made  --> */
 .how-made {
 }
