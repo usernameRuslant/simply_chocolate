@@ -66,6 +66,16 @@ body {
   line-height: 1.11;
   letter-spacing: -0.03em;
   /* margin-right: auto; */
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.logo-icon {
+  stroke: #fd9222;
+}
+.logo-icon:hover,
+.icon-icon:focus {
+  stroke: #111;
 }
 
 .page-header-logo > span {
@@ -108,14 +118,23 @@ body {
 .social-link {
 }
 /* hero */
+.hero {
+  margin-bottom: 80px;
+}
 .hero .container {
   background: rgba(17, 17, 17, 0.7);
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(../images/hero/hero-bgq.jpg);
   border-radius: 30px;
-
+  height: 600px;
   width: 1136px;
   padding-bottom: 40px;
   padding: 0 32px 40px 32px;
-  margin-bottom: 120px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .hero .content-wrapper {
@@ -124,7 +143,7 @@ body {
   flex-direction: column;
   justify-content: end;
   gap: 14px;
-  height: 600px;
+  /* height: 600px; */
 }
 .hero-title {
   font-weight: 500;
@@ -172,7 +191,7 @@ body {
 .benefits {
   padding: 50px 0px;
 
-  height: 266px;
+  /* height: 266px; */
   background: var(--violet);
 }
 .benefits .container {
@@ -186,6 +205,27 @@ body {
 .benefits-item {
   /* width: 308px; */
   flex-basis: calc((100% - 176px) / 3);
+  position: relative;
+}
+.benefits-item:not(:last-child)::after {
+  position: absolute;
+  top: 63px;
+  right: -44px;
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 124px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.benefits-con-wrapper {
+  height: 62px;
+  width: 62px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 19px;
 }
 .benefits-title {
   font-weight: 600;
@@ -267,6 +307,7 @@ body {
   background: var(--black);
   border: 1px solid none;
   color: var(--white);
+  border: none;
 }
 
 /* <!-- how it's made  --> */
@@ -290,7 +331,6 @@ body {
 .how-made-block-title {
 }
 .how-made-block-list {
-  list-style: disc;
 }
 .how-made-block-item {
   font-family: var(--font-family);
