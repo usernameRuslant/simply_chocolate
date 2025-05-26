@@ -208,8 +208,8 @@ body {
 .hero-btn {
   border-radius: 100px;
   padding: 14px 40px;
-  width: 144px;
-  height: 45px;
+  min-width: 144px;
+
   font-weight: 600;
   font-size: 14px;
   color: var(--white);
@@ -228,7 +228,7 @@ body {
 .hero-link-howmade {
   display: inline-block;
   min-width: 183px;
-  padding: 14px 40px;
+  padding: 14px 25px;
   border: 1px solid var(--white);
   border-radius: 100px;
   font-weight: 600;
