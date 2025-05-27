@@ -95,12 +95,12 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">
-            Treat yourself or a loved one to <br />
-            our finest ingredients for a moment of pure delight!
+            Treat yourself or a loved one to our finest ingredients for a moment
+            of pure delight!
           </h1>
 
           <div class="hero-bottom">
-            <buttoan class="hero-btn" type="button">Buy now</buttoan>
+            <buttoan class="hero-button" type="button">Buy now</buttoan>
             <a class="hero-link-howmade" href="#making-process"
               >How it’s made</a
             >
@@ -516,5 +516,66 @@
         </div>
       </section>
     </main>
+    <!-- modal -->
+    <div class="modal">
+      <h2 class="modal-title">
+        LEAVE A REVIEW ABOUT <span class="accent">OUR CHOCOLATE</span>
+      </h2>
+      <!-- icon close -->
+
+      <svg class="close-icon" width="28" height="28">
+        <use href="./images/icon/sprite.svg#icon-close"></use>
+      </svg>
+
+      <!-- form -->
+      <form class="modal-form">
+        <label class="modal-label" for="user-name"
+          >Name
+          <input
+            class="modal-input"
+            type="text"
+            id="user-name"
+            name="user-name"
+        /></label>
+        <label class="modal-label" for="user-email"
+          >Email
+          <input
+            class="modal-input"
+            type="email"
+            id="user-email"
+            name="user-email"
+        /></label>
+        <label class="modal-label" for="user-phone"
+          >Phone number
+          <input
+            class="modal-input"
+            type="tel"
+            id="user-phone"
+            name="user-phone"
+        /></label>
+        <label class="modal-label" for="user-message"
+          >Comment
+          <textarea
+            class="modal-textarea"
+            name="user-message"
+            id="user-message"
+            name="user-message"
+            placeholder="Enter text"
+          ></textarea>
+        </label>
+        <!-- checkbox -->
+        <div class="modal-checkbox-wrapper">
+          <input class="modal-checkbox" type="checkbox" name="policy" />
+          <p class="form-policy-text">
+            I accept the terms and conditions of the
+            <a href="#" target="_blank" rel="noopener noreferrer" class="accent"
+              >Privacy Policy
+            </a>
+          </p>
+        </div>
+        <!-- buttom -->
+        <button class="modal-button" type="submit">Send</button>
+      </form>
+    </div>
   </body>
 </html>

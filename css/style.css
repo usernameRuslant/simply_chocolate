@@ -205,7 +205,7 @@ body {
   display: flex;
   align-items: center;
 }
-.hero-btn {
+.hero-button {
   border-radius: 100px;
   padding: 14px 40px;
   min-width: 144px;
@@ -220,8 +220,8 @@ body {
   background: var(--orange);
   transition: background-color 250ms linear, color 250ms linear;
 }
-.hero-btn:hover,
-.hero-btn:focus {
+.hero-button:hover,
+.hero-button:focus {
   background-color: var(--beige);
   color: var(--orange);
 }
@@ -534,4 +534,97 @@ body {
 }
 .top-sellers-item:hover .overlay-item-blur {
   filter: blur(15px);
+}
+
+/* modal */
+.modal {
+  max-width: 517px;
+  border-radius: 15px;
+  padding: 40px;
+  background-color: var(--light);
+  position: relative;
+}
+.modal-title {
+  width: 298px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 40px;
+}
+.accent {
+}
+.close-icon {
+  stroke: var(--black);
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.modal-form {
+}
+.modal-label {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+  display: block;
+  margin-bottom: 18px;
+  outline: transparent;
+}
+.modal-input {
+  width: 100%;
+  margin-top: 8px;
+  height: 68px;
+  border: 1.5px solid rgba(64, 64, 64, 0.3);
+  border-radius: 13px;
+  padding: 22px 24px;
+  outline: transparent;
+  padding-left: 62px;
+}
+.modal-textarea {
+  display: block;
+  outline: transparent;
+  height: 137px;
+  width: 100%;
+  border: 1.5px solid rgba(64, 64, 64, 0.3);
+  border-radius: 13px;
+  padding: 22px 24px 93px 24px;
+  margin-top: 8px;
+  opacity: 0.5;
+}
+.modal-textarea::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+.modal-checkbox-wrapper {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 41px;
+}
+.modal-checkbox {
+}
+.form-policy-text {
+  font-weight: 400;
+
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.6);
+}
+.form-policy-text > a {
+  text-decoration: underline;
+}
+.modal-button {
+  min-width: 117px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 100px;
+  font-weight: 600;
 }
