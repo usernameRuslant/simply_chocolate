@@ -516,66 +516,111 @@
         </div>
       </section>
     </main>
+    <!-- footer -->
     <!-- modal -->
-    <div class="modal">
-      <h2 class="modal-title">
-        LEAVE A REVIEW ABOUT <span class="accent">OUR CHOCOLATE</span>
-      </h2>
-      <!-- icon close -->
+    <div class="backdrop is-open">
+      <div class="modal">
+        <!-- icon close -->
+        <button class="close-modal-button" type="button">
+          <svg class="close-icon" width="28" height="28">
+            <use href="./images/icon/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <!-- title -->
+        <p class="modal-title">
+          LEAVE A REVIEW ABOUT <span class="accent">OUR CHOCOLATE</span>
+        </p>
 
-      <svg class="close-icon" width="28" height="28">
-        <use href="./images/icon/sprite.svg#icon-close"></use>
-      </svg>
+        <!-- form -->
+        <form class="modal-form">
+          <div class="form-wrapper">
+            <label class="modal-label" for="user-name">Name</label>
+            <div class="form-wrapper-iconinput">
+              <input
+                class="modal-input"
+                type="text"
+                id="user-name"
+                name="user_name"
+                required
+              />
+              <svg class="review-form-input" width="24" height="24">
+                <use href="./images/icon/sprite.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-wrapper">
+            <label class="modal-label" for="user-email">Email</label>
+            <div class="form-wrapper-iconinput">
+              <input
+                class="modal-input"
+                type="email"
+                id="user-email"
+                name="user_email"
+                required
+              />
+              <svg class="review-form-input" width="24" height="24">
+                <use href="./images/icon/sprite.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
 
-      <!-- form -->
-      <form class="modal-form">
-        <label class="modal-label" for="user-name"
-          >Name
-          <input
-            class="modal-input"
-            type="text"
-            id="user-name"
-            name="user-name"
-        /></label>
-        <label class="modal-label" for="user-email"
-          >Email
-          <input
-            class="modal-input"
-            type="email"
-            id="user-email"
-            name="user-email"
-        /></label>
-        <label class="modal-label" for="user-phone"
-          >Phone number
-          <input
-            class="modal-input"
-            type="tel"
-            id="user-phone"
-            name="user-phone"
-        /></label>
-        <label class="modal-label" for="user-message"
-          >Comment
-          <textarea
-            class="modal-textarea"
-            name="user-message"
-            id="user-message"
-            name="user-message"
-            placeholder="Enter text"
-          ></textarea>
-        </label>
-        <!-- checkbox -->
-        <div class="modal-checkbox-wrapper">
-          <input class="modal-checkbox" type="checkbox" name="policy" />
-          <p class="form-policy-text">
-            I accept the terms and conditions of the
-            <a href="#" target="_blank" rel="noopener noreferrer" class="accent"
-              >Privacy Policy
-            </a>
-          </p>
-        </div>
-        <!-- buttom -->
-        <button class="modal-button" type="submit">Send</button>
-      </form>
+          <div class="form-wrapper">
+            <label class="modal-label" for="user-tel">Name</label>
+            <div class="form-wrapper-iconinput">
+              <input
+                class="modal-input"
+                type="tel"
+                id="user-tel"
+                name="user_tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                required
+              />
+              <svg class="review-form-input" width="24" height="24">
+                <use href="./images/icon/sprite.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-wrapper">
+            <label class="modal-label" for="user-message">Comment</label>
+            <textarea
+              class="modal-textarea"
+              name="user-message"
+              id="user-message"
+              name="user_comment"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+          <!-- checkbox -->
+          <div class="modal-checkbox-wrapper">
+            <input
+              class="modal-checkbox visually-hidden"
+              type="checkbox"
+              id="checkbox"
+              name="policy"
+            />
+            <label class="review-custom-checkbox-label" for="checkbox">
+              <span class="review-custom-checkbox">
+                <svg class="review-custom-checkbox-icon" width="10" height="10">
+                  <use href="./images/icon/sprite.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+
+              I accept the terms and conditions of the
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="accent"
+                >Privacy Policy
+              </a>
+            </label>
+          </div>
+          <!-- buttom -->
+          <button class="modal-button" type="submit">Send</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
