@@ -21,72 +21,78 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/st1.css" />
   </head>
 
   <body>
     <!-- header -->
     <header class="page-header">
-      <div class="container">
-        <a class="page-header-logo" href="/"
-          ><span>SIMPLY </span> &nbsp; CHOCOLATE
-          <svg class="logo-icon" width="24" height="24">
-            <use href="./images/icon/sprite.svg#icon-logo"></use>
-          </svg>
-        </a>
-        <div class="content-wrapper">
-          <nav class="page-header-nav">
-            <ul class="page-header-list list">
-              <li class="page-header-item">
-                <a class="page-header-link" href="">Home</a>
-              </li>
-              <li class="page-header-item">
-                <a class="page-header-link" href="">How it’s made?</a>
-              </li>
-              <li class="page-header-item">
-                <a class="page-header-link" href="">Chocolate is loved</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="social-list list">
-            <li class="social-item">
-              <a
-                class="social-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.facebook.com/?locale=ru_RU"
-              >
-                <svg class="soc-icon" href="" width="24" height="24">
-                  <use href="./images/icon/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
+      <div class="container page-header-container">
+        <nav class="page-header-nav">
+          <a class="page-header-logo" href="/"
+            ><i>SIMPLY </i> &nbsp; CHOCOLATE
+            <svg class="logo-icon" width="21" height="21">
+              <use href="./images/icon/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+
+          <ul class="page-header-list">
+            <li class="page-header-item">
+              <a class="page-header-link" href="">Home</a>
             </li>
-            <li class="social-item">
-              <a
-                class="social-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.instagram.com/"
-              >
-                <svg class="soc-icon" href="" width="24" height="24">
-                  <use href="./images/icon/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
+            <li class="page-header-item">
+              <a class="page-header-link" href="">How it’s made?</a>
             </li>
-            <li class="social-item">
-              <a
-                class="social-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://x.com/"
-              >
-                <svg class="soc-icon" href="" width="24" height="24">
-                  <use href="./images/icon/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
+            <li class="page-header-item">
+              <a class="page-header-link" href="">Chocolate is loved</a>
             </li>
           </ul>
-        </div>
+        </nav>
+        <ul class="social-list">
+          <li class="social-item">
+            <a
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.facebook.com/?locale=ru_RU"
+            >
+              <svg class="soc-icon" width="24" height="24">
+                <use href="./images/icon/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/"
+            >
+              <svg class="soc-icon" width="24" height="24">
+                <use href="./images/icon/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://x.com/"
+            >
+              <svg class="soc-icon" href="" width="24" height="24">
+                <use href="./images/icon/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <button class="mobile-menu-open-button">
+          <svg class="mobile-menu-open-icon" width="28" height="28">
+            <use href="./images/icon/sprite.svg#icon-mobmenu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- main -->
@@ -518,7 +524,7 @@
     </main>
     <!-- footer -->
     <!-- modal -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <!-- icon close -->
         <button class="close-modal-button" type="button">
@@ -620,6 +626,53 @@
           <!-- buttom -->
           <button class="modal-button" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+    <!-- moba-menu -->
+    <div class="mobile-menu">
+      <div class="container mobile-menu-container">
+        <button class="mobaile-menu-close-button" type="button">
+          <svg class="mobaile-menu-close-icon" width="28" height="28">
+            <use href="./images/icon/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-nav">
+          <ul class="mobile-menu-nav-list">
+            <li class="mobile-menu-nav-list-item">
+              <a class="mobile-menu-nav-link" href="#"></a>Home
+            </li>
+            <li class="mobile-menu-nav-list-item">
+              <a class="mobile-menu-nav-link" href="#"></a>How it’s made?
+            </li>
+            <li class="mobile-menu-nav-list-item">
+              <a class="mobile-menu-nav-link" href="#"></a>Chocolate is loved
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="mobile-menu-social-list">
+          <li class="mobile-menu-social-list-item">
+            <a href="" class="mobile-menu-social-list-link">
+              <svg class="mobile-menu-social-list-icon" width="22" height="22">
+                <use href="./images/icon/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-list-item">
+            <a href="" class="mobile-menu-social-list-link">
+              <svg class="mobile-menu-social-list-icon" width="22" height="22">
+                <use href="./images/icon/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-list-item">
+            <a href="" class="mobile-menu-social-list-link">
+              <svg class="mobile-menu-social-list-icon" width="22" height="22">
+                <use href="./images/icon/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
